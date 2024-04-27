@@ -42,7 +42,7 @@ MarkNotes is a notes handling system designed to replace the current sticky note
 ## Contributors
 - [vinayak-sannaik](https://github.com/vinayak-sannaik)
 
-## Checkout live : https://marknotes-ten.vercel.app/
+## Checkout live : [markNotes.com](https://marknotes-ten.vercel.app/)
 
 ## Some snap shotes 🎇📸
 ![image](https://github.com/Vinayak-Sannaik/marknote/assets/112576218/936cbdec-feac-4ebd-a7aa-c01249de1cf9)
