@@ -16,8 +16,11 @@ const userSchema = new mongoose.Schema({
     active : {
         type : Boolean,
         default : true
-    }
+    },
     
+},
+{
+  collation: { locale: 'en', strength: 2 }
 })
 
 module.exports = mongoose.model('User', userSchema)

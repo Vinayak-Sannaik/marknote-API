@@ -25,7 +25,7 @@ const createUser = async (req, res) => {
   }
 
   //check any duplicates in user name
-  const duplicate = await User.findOne({ username }).collation({ local : 'en', strength : 2}).lean().exec();
+  const duplicate = await User.findOne({ username }).lean().exec();
 
   if (duplicate) {
     return res.status(409).json({ message: "Duplicate username " });
@@ -73,7 +73,7 @@ const updateUser = async (req, res) => {
   }
 
   // Check for Duplicates
-  const duplicate = await User.findOne({ username }).collation({ local : 'en', strength : 2}).lean().exec();
+  const duplicate = await User.findOne({ username }).lean().exec();
 
   //Allow original user to update
   if (duplicate && duplicate?._id.toString() !== id) {
