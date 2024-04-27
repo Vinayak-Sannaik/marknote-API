@@ -1,5 +1,10 @@
+const express = require('express')
 const rateLimit = require('express-rate-limit');
 const { logEvents } = require('./logger');
+
+const app = express()
+// Enable trust proxy
+app.set('trust proxy', true);
 
 const loginLimiter = rateLimit({
     windowMs: 60 * 1000, // 1 minute

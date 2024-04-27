@@ -12,6 +12,8 @@ const connectDB = require("./config/dbConn");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3600;
 
+// Enable trust proxy
+app.set('trust proxy', true);
 // console.log(process.env.NODE_ENV)
 connectDB();
 
